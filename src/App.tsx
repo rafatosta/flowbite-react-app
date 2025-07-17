@@ -1,5 +1,11 @@
 import { DarkThemeToggle } from "flowbite-react";
 
+import patternLight from "/pattern-light.svg"
+import patternDark from "/pattern-dark.svg"
+import flowbiteReact from  "/flowbite-react.svg"
+import flowbite from "/flowbite.svg"
+import figama from "/figma.svg"
+
 export default function App() {
   const CARDS = [
     {
@@ -103,14 +109,14 @@ export default function App() {
       description:
         "Upgrade your development stack with more components and templates from Flowbite",
       url: "https://flowbite.com/pro/",
-      icon: <img alt="Flowbite Pro logo" src="/flowbite.svg" />,
+      icon: <img alt="Flowbite Pro logo" src={flowbite} />,
     },
     {
       title: "Flowbite Figma",
       description:
         "Use our Figma Design System to design and collaborate better within your team",
       url: "https://flowbite.com/figma/",
-      icon: <img alt="Figma logo" src="/figma.svg" />,
+      icon: <img alt="Figma logo" src={figama} />,
     },
   ];
 
@@ -121,12 +127,12 @@ export default function App() {
           <img
             className="absolute right-0 min-w-dvh dark:hidden"
             alt="Pattern Light"
-            src="/pattern-light.svg"
+            src={patternLight}
           />
           <img
             className="absolute right-0 hidden min-w-dvh dark:block"
             alt="Pattern Dark"
-            src="/pattern-dark.svg"
+            src={patternDark}
           />
         </div>
       </div>
@@ -147,7 +153,7 @@ export default function App() {
               <img
                 className="size-6"
                 alt="Flowbite React logo"
-                src="/flowbite-react.svg"
+                src={flowbiteReact}
               />
               <span className="relative w-fit text-xl font-semibold whitespace-nowrap text-[#111928] dark:text-white">
                 Flowbite React
